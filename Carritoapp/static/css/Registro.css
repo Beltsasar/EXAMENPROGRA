@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor del formulario */
+.formulario {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.6); /* Sombra naranja al enfocar */
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+.form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ff7f00;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón Enviar */
+.btn-primary {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ff7f00;
+}
+
+/* Estilos para el botón Restablecer */
+.btn-secondary {
+    margin-top: 10px;
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #ff7f00;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff7f00;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.col {
+    margin-bottom: 20px; /* Espacio inferior entre columnas */
+}
+
+.col label {
+    display: block; /* Mostrar etiquetas en bloque para separar visualmente */
+    margin-bottom: 5px; /* Espacio inferior entre etiqueta y elemento siguiente */
+}
+
+.col select {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid #ff7f00; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+/* Estilos adicionales para mejorar la apariencia del menú desplegable */
+.col select:focus {
+    outline: none; /* Eliminar el contorno al enfocar */
+    border-color: #66afe9; /* Cambiar color del borde al enfocar */
+    box-shadow: 0 0 5px #66afe9; /* Sombra al enfocar */
+}

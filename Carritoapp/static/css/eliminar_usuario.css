@@ -1,0 +1,99 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+header {
+    background-color: #ff7f00; /* Azul */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list li {
+    background-color: #f9f9f9; /* Fondo de cada usuario */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.user-list li strong {
+    font-weight: bold;
+}
+
+.user-list li form {
+    display: inline; /* Alinear botones en línea */
+}
+
+.user-list li form button {
+    background-color: #ff7f00; /* Rojo */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.user-list li form button:hover {
+    background-color: #ff7f00; /* Rojo más oscuro al hacer hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #ff7f00; /* Azul */
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9; /* Fondo de celda */
+}
+
+footer {
+    background-color: #ff7f00; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

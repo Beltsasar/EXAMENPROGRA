@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado SMK</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al Supermercado SMK</h1>
+    </header>
+    <nav>
+
+        <a href="{% url 'contacto' %}">Contacto</a>
+    </nav>
+    <div class="container">
+        <h2>Tu supermercado de confianza</h2>
+        <p>Encuentra los mejores productos a los mejores precios, solo en SMK.</p>
+    </div>
+    <div class="product-sections">
+        <a href="{% url 'seccion_frutas' %}">
+            <img src="{% static 'images/secciones/frutas.png' %}" alt="Frutas">
+        </a>
+        <a href="{% url 'seccion_yoghurt' %}">
+            <img src="{% static 'images/secciones/yoghurts.png' %}" alt="Yoghurts">
+        </a>
+        <a href="{% url 'seccion_Quesos' %}">
+            <img src="{% static 'images/secciones/quesos.png' %}" alt="Quesos">
+        </a>
+        <a href="{% url 'seccion_leche' %}">
+            <img src="{% static 'images/secciones/Leches.png' %}" alt="Leches">
+        </a>
+        <a href="{% url 'seccion_Postres' %}">
+            <img src="{% static 'images/secciones/Postres.png' %}" alt="Postres">
+        </a>
+        <a href="{% url 'seccion_congelados' %}">
+            <img src="{% static 'images/secciones/congelados.png' %}" alt="Congelados">
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

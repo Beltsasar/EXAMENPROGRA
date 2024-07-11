@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6; /* Fondo claro con toque naranja */
+}
+
+header {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #ff9933; /* Naranja medio */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffad66; /* Naranja más claro */
+}
+
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ffad66; /* Naranja más claro */
+}
+
+h1 {
+    color: #ff7f00; /* Naranja brillante */
+}
+

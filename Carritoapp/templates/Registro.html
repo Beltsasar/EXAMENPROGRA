@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&H</title>
+
+    <link href="{% static 'css/Registro.css' %}" rel="stylesheet" >
+</head>
+<body>
+
+    <!-- Sección del formulario -->
+    <section class="formulario">
+        <form name="form1" id="form1" method="post" action="{% url 'registro_usuario' %}">
+            {% csrf_token %}
+            <div class="row">
+                <h3>REGÍSTRATE</h3>
+                <div class="col">
+                    <label for="login">Nombre</label>
+                    <input type="text" name="login" id="login" class="form-control">
+                    <label for="clave">Clave</label>
+                    <input type="password" name="clave" id="clave" class="form-control">
+                    <label for="repetir">Repetir Clave</label>
+                    <input type="password" name="repetir" id="repetir" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control">
+                    <label for="fono">Teléfono de Contacto</label>
+                    <input type="text" name="fono" id="fono" class="form-control">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="comuna">Comuna</label>
+                    <select name="comuna" id="comuna" class="form-select">
+                        <option value="">Seleccione</option>
+                        <option value="Cerrillos">Cerrillos</option>
+                        <option value="Cerro Navia">Cerro Navia</option>
+                        <option value="Conchalí">Conchalí</option>
+                        <option value="El Bosque">El Bosque</option>
+                        <option value="Estación Central">Estación Central</option>
+                        <option value="Huechuraba">Huechuraba</option>
+                        <option value="Independencia">Independencia</option>
+                        <option value="La Cisterna">La Cisterna</option>
+                        <option value="La Florida">La Florida</option>
+                        <option value="La Granja">La Granja</option>
+                        <option value="La Pintana">La Pintana</option>
+                        <option value="La Reina">La Reina</option>
+                        <option value="Las Condes">Las Condes</option>
+                        <option value="Lo Barnechea">Lo Barnechea</option>
+                        <option value="Lo Espejo">Lo Espejo</option>
+                        <option value="Lo Prado">Lo Prado</option>
+                        <option value="Macul">Macul</option>
+                        <option value="Maipú">Maipú</option>
+                        <option value="Ñuñoa">Ñuñoa</option>
+                        <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                        <option value="Peñalolén">Peñalolén</option>
+                        <option value="Providencia">Providencia</option>
+                        <option value="Pudahuel">Pudahuel</option>
+                        <option value="Puente Alto">Puente Alto</option>
+                        <option value="Quilicura">Quilicura</option>
+                        <option value="Quinta Normal">Quinta Normal</option>
+                        <option value="Recoleta">Recoleta</option>
+                        <option value="Renca">Renca</option>
+                        <option value="San Bernardo">San Bernardo</option>
+                        <option value="San Joaquín">San Joaquín</option>
+                        <option value="San Miguel">San Miguel</option>
+                        <option value="San Ramón">San Ramón</option>
+                        <option value="Santiago">Santiago</option>
+                        <option value="Vitacura">Vitacura</option>
+                    </select>
+
+                </div>
+                
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" class="form-control">
+                </div>
+            </div>
+
+            <!-- Botones de enviar y restablecer -->
+            <div class="centro">
+                <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar" class="btn btn-primary">
+            </div>
+            <div>
+                <input type="reset" name="btnLimpiar" id="btnLimpiar" value="Restablecer" class="btn btn-secondary">
+            </div>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <nav class="pie">
+            <a href="#">Desarrollado por Daniel Plasencia & Thiare Hernández</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{% static 'css/Contacto.css' %}">
+    <script>
+
+        </script>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+
+        <a href="{% url 'mostrarIndex' %}">Inicio</a>
+    </nav>
+    
+    <div class="container">
+        <form id="contactForm" method="post" action="{% url 'enviar_comentario' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+    </footer>
+    <script src="{% static 'js/Contac.js' %}"></script>
+
+</body>
+</html>

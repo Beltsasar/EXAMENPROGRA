@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <script>
+
+        </script>
+</head>
+</body>
+<header>
+    <h1>Leche</h1>
+</header>
+<nav>
+    <a href="{% url 'mostrarIndex' %}">Inicio</a>
+</nav>
+</html>
+<section class="section" style="margin-bottom: 100px;">
+    <table>
+        <tr>
+            <td>
+
+                <div class="Secciones">
+                    <article class="seccion"> 
+                        <article class="producto" data-id="10" data-nombre="Queso Fresco Colun" data-precio="910" data-imagen-url="img/leche/leche (1).png ">
+                            <div class="imagen">
+                                <img src="{% static 'images/quesos/queso (1).png' %}" alt="Queso Fresco Colun" style="width: 100%; max-width: 400px;">
+                                <div class="info">
+                                    <h2>$910</h2>
+                                    <p>Queso Fresco Colun</p>
+                                    <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+            </td>
+            <td>
+                            
+                <article class="seccion"> 
+                    <article class="producto" data-id="12" data-nombre="Surlat Autentica" data-precio="920" data-imagen-url="img/leche/leche (2).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/lacteo/lacteo (2).png' %}" alt="Surlat Autentica" style="width: 100%; max-width: 400px;">
+                            <div class="info">
+                                <h2>$920</h2>
+                                <p>Surlat Autentica</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </td>
+
+               <td>
+                <article class="seccion"> 
+                    <article class="producto" data-id="13" data-nombre="Soprole Natural" data-precio="930" data-imagen-url="img/leche/leche (3).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/lacteo/lacteo (3).png' %}" alt="Soprole Natural"style="width: 100%; max-width: 400px;">                    <div class="info">
+                                <h2>$930</h2>
+                                <p>Soprole Natural</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </td>    
+        </tr>
+        <tr>
+    <td>
+        <article class="seccion"> 
+            <article class="producto" data-id="14" data-nombre="Lonco Leche Natural" data-precio="940" data-imagen-url="img/leche/leche (4).png">
+                <div class="imagen">
+                    <img src="{% static 'images/lacteo/lacteo (4).png' %}" alt="Lonco Leche Natural"style="width: 100%; max-width: 400px;">                    <div class="info">
+                        <h2>$940</h2>
+                        <p>Lonco Leche Natural</p>
+                        <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </article>
+        
+    </td>
+    <td>
+        <article class="seccion"> 
+            <article class="producto" data-id="15" data-nombre="Colun vainilla" data-precio="950" data-imagen-url="img/leche/leche (5).png">
+                <div class="imagen">
+                    <img src="{% static 'images/lacteo/lacteo (5).png' %}" alt="Colun vainilla"style="width: 100%; max-width: 400px;">                    <div class="info">
+                        <h2>$950</h2>
+                        <p>Colun vainilla</p>
+                        <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </article>
+        
+    </td>
+    <td>
+        <article class="seccion"> 
+            <article class="producto" data-id="16" data-nombre="Soprole Zero Lacto Chocolate" data-precio="960" data-imagen-url="img/leche/leche (6).png">
+                <div class="imagen">
+                    <img src="{% static 'images/lacteo/lacteo (6).png' %}" alt="Soprole Zero Lacto Chocolate"style="width: 100%; max-width: 400px;">                    <div class="info">
+                        <h2>$960</h2>
+                        <p>Soprole Zero Lacto Chocolate</p>
+                        <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </article>
+    </td>
+</table>
+</section>
+<aside>
+    <h2>Carro de Compras</h2>
+    <ul id="carro">
+        <li>Total de la compra: $0.00</li>
+    </ul>
+    <button id="mostrar-carrito" onclick="window.location.href='Carrito.html'">Mostrar Carrito</button>
+</aside>
+<footer>
+    <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+</footer>
+{% block extra_js %}
+<script src="{% static 'js/Carrito.js' %}"></script>
+{% endblock %}

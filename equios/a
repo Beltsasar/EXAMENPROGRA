@@ -1,0 +1,40 @@
+<!-- productos_base.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Supermercado SMK{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al Supermercado SMK</h1>
+    </header>
+    <nav>
+        <a href="{% url 'mostrarIndex' %}">Inicio</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        {% block content %}
+        <h2>{% block section_title %}Sección de Productos{% endblock %}</h2>
+        <div class="products">
+            <!-- Aquí va el contenido específico de cada sección de productos -->
+            {% block product_list %}
+            <div class="product">
+                <img src="{% static 'images/producto_placeholder.jpg' %}" alt="Producto">
+                <p>Nombre del Producto</p>
+                <p>Precio: $XX.XX</p>
+            </div>
+            {% endblock %}
+        </div>
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

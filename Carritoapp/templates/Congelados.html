@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congelados - Supermercado SMK</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+</head>
+<body>
+<header>
+    <h1>Congelados</h1>
+</header>
+<nav>
+    <a href="{% url 'mostrarIndex' %}">Inicio</a>
+</nav>
+
+<section class="section" style="margin-bottom: 100px;">
+    <table>
+        <tr>
+            <td>
+                <article class="seccion">
+                    <div class="producto" data-id="1" data-nombre="Sadia Pollo Golden" data-precio="4.99" data-imagen-url="img/congelado/congelado (1).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/congelado/congelado (1).png' %}" alt="Sadia Pollo Golden" style="width: 100%; max-width: 400px;">
+                            <div class="info">
+                                <h2>$4.99</h2>
+                                <p>Sadia Pollo Golden</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </td>
+            <td>
+                <article class="seccion">
+                    <div class="producto" data-id="2" data-nombre="Super Pollo Filetitos" data-precio="5.99" data-imagen-url="img/congelado/congelado (2).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/congelado/congelado (2).png' %}" alt="Super Pollo Filetitos" style="width: 100%; max-width: 400px;">
+                            <div class="info">
+                                <h2>$5.99</h2>
+                                <p>Super Pollo Filetitos</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </td>
+        </tr>
+        <!-- Aquí se pueden añadir más filas con productos -->
+        <tr>
+            <td>
+                <article class="seccion">
+                    <div class="producto" data-id="3" data-nombre="Super Pollo Nuggets Pollo" data-precio="2.49" data-imagen-url="img/congelado/congelado (3).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/congelado/congelado (3).png' %}" alt="Super Pollo Nuggets Pollo" style="width: 100%; max-width: 400px;">
+                            <div class="info">
+                                <h2>$2.49</h2>
+                                <p>Super Pollo Nuggets Pollo</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </td>
+            <td>
+                <article class="seccion">
+                    <div class="producto" data-id="4" data-nombre="Super Pollo Alitas de Pollo" data-precio="3.99" data-imagen-url="img/congelado/congelado (4).png">
+                        <div class="imagen">
+                            <img src="{% static 'images/congelado/congelado (4).png' %}" alt="Super Pollo Alitas de Pollo" style="width: 100%; max-width: 400px;">
+                            <div class="info">
+                                <h2>$3.99</h2>
+                                <p>Super Pollo Alitas de Pollo</p>
+                                <button class="agregar" style="background-color: #FF5722; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </td>
+        </tr>
+        <!-- Se pueden añadir más filas según sea necesario -->
+    </table>
+</section>
+
+<aside>
+    <h2>Carro de Compras</h2>
+    <ul id="carro">
+        <li>Total de la compra: $0.00</li>
+    </ul>
+    <button id="mostrar-carrito" onclick="window.location.href='VerCarro.html'">Mostrar Carrito</button>
+</aside>
+
+<footer>
+    <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+</footer>
+
+<script src="{% static 'js/Carrito.js' %}"></script>
+
+</body>
+</html>

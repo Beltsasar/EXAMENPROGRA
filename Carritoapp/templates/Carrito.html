@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="{% static 'css/carro.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'mostrarIndex' %}">Inicio</a>
+    </nav>
+<aside>
+    <h2>Carro de Compras</h2>
+    <ul id="carro">
+        <!-- Aquí se mostrarán los productos del carrito -->
+        <li>Total de la compra: $0.00</li>
+    </ul>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+    <button id="pagar-compra">Pagar Compra</button>
+</aside>
+<footer class="footer">
+    <nav class="pie">
+        <a href="/Informacion.html">Desarrollado por Daniel Plasencia & Thiare Hernández</a>
+        
+    </nav>
+</footer>
+
+<script src="{% static 'js/carrito.js' %}"></script>
+</body>
+</html>

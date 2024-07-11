@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6; /* Fondo claro con toque naranja */
+}
+header {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: #ff9933; /* Naranja medio */
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ffad66; /* Naranja más claro */
+}
+.container {
+    padding: 20px;
+}
+footer {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.product-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-sections a {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.product-sections img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-sections img:hover {
+    transform: scale(1.05);
+}
+
+.product-sections p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Panel de Control</h1>
+    </header>
+    <div class="container">
+        <h2>Bienvenido al Panel de Control</h2>
+        <p>Elige una opción:</p>
+        <div class="actions">
+            <a href="{% url 'user_list' %}">Mostrar Usuarios</a>
+
+            <a href="{% url 'EliminarUser' %}">Eliminar Usuario</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Supermercado SMK. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

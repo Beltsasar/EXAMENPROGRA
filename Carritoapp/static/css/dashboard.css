@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6; /* Fondo claro con toque naranja */
+}
+
+header {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.dashboard-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-container ul li {
+    margin-bottom: 10px;
+}
+
+.dashboard-container ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ff9933; /* Naranja medio */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-container ul li a:hover {
+    background-color: #ffad66; /* Naranja más claro */
+}
+
+footer {
+    background-color: #ff7f00; /* Naranja brillante */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

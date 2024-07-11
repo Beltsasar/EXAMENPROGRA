@@ -1,0 +1,46 @@
+{% extends 'productos_base.html' %}
+
+{% load static %}
+
+{% block title %}Yoghurts - Supermercado SMK{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/productos.css' %}">
+{% endblock %}
+
+{% block section_title %}Yoghurts{% endblock %}
+
+{% block product_list %}
+<div class="product-section">
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (1).png' %}" alt="Lechuga">
+        <p>Protein</p>
+        <p>Precio: $1.99/unidad</p>
+    </div>
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (2).png' %}" alt="Lechuga">
+        <p>Colun Light</p>
+        <p>Precio: $0.99/unidad</p>
+    </div>
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (3).png' %}" alt="Lechuga">
+        <p>Quilllayes Natural</p>
+        <p>Precio: $1.49/kg</p>
+    </div>
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (4).png' %}" alt="Lechuga">
+        <p>Goodness Nestle</p>
+        <p>Precio: $2.49/kg</p>
+    </div>
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (5).png' %}" alt="Lechuga">
+        <p>Soprole Frutilla</p>
+        <p>Precio: $1.79/kg</p>
+    </div>
+    <div class="product">
+        <img src="{% static 'images/yoghurt/yoghurt (6).png' %}" alt="Lechuga">
+        <p>Quillayes griego</p>
+        <p>Precio: $2.99/kg</p>
+    </div>
+</div>
+{% endblock %}
